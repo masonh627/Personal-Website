@@ -46,7 +46,6 @@ section {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
-    border-color: #FBFBFB;
 }
 
 section h2 {
@@ -64,8 +63,8 @@ section ul {
 section li {
     background-color: #FBFBFB;
     color: black;
-    width: 10em;
-    height: 10em;
+    width: 15%;
+    aspect-ratio: 1;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
