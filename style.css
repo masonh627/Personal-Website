@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: #2E2532;
+    color: #FBFBFB;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(280, 15%, 12%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-right: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navlinks a:hover {
+    color: #9e4770;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+section {
+    background-color: hsl(280, 15%, 12%);
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+section li {
+    background-color: rgba(128,128,128,0.1);
+    border: 2px solid black;
+    color: white;
+    width: 15%;
+    aspect-ratio: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section li:hover {
+    background-color: rgba(255,255,255,0.75);
+    color: black;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#info {
+    width: 100%;  
+}
+
+#contactform {
+    font-size: 16pt;
+}
+
+#contactform input {
+    border-radius: 5px;
+    height: 16pt;
+}
+
+#submit {
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.textbox {
+    background-color: #2E2532;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.home {
+    justify-content: center;
+}
+
+.homeinfo li {
+    width: 30%;
+    aspect-ratio: 0.75;
+}
+
+#hobbies {
+    color: white;
+    transition: 0.5s;
+}
+
+#hobbies:hover {
+    color: black;
+}
+
+#hobbies li {
+    list-style: disc;
+    border: none;
+    background-color: inherit;
+    aspect-ratio: unset;
+    width: fit-content;
+    padding: 2px;
+    font-size: 1.5em;
+    color: inherit;
+}
+
+#aboutme {
+    color: white;
+    transition: 0.5s;
+}
+
+#aboutme:hover {
+    color: black;
+}
+
+#aboutme li {
+    border: none;
+    background-color: inherit;
+    aspect-ratio: unset;
+    width: fit-content;
+    padding: 2px;
+    font-size: 1em;
+    color: inherit;
+}
+
+#aboutme ul {
+    display: block;
+    flex-wrap: unset;
+}
+
+#aboutme p {
+    text-align: left;
+    font-size: 1em;
+}
+
+#interests {
+    color: white;
+    transition: 0.5s;
+}
+
+#interests:hover {
+    color: black;
+}
+
+#interests li {
+    list-style: disc;
+    border: none;
+    background-color: inherit; 
+    width: fit-content;
+    aspect-ratio: unset;
+    padding: 2px;
+    font-size: 1.5em;
+    color: inherit;
+}
+
+.course ol {
+    padding-left: 20px
+}
+
+.course h6 {
+    margin: unset;
+}
+
+.course li {
+    border: none;
+    background-color: inherit;
+    width: fit-content;
+    aspect-ratio: unset;
+    font-size: 1em;
+    padding: 2px;
+    color: inherit;
+}
+
+.course li:hover {
+    background-color: unset;
+}
+
+.projectlist a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.projectlist a:hover {
+    color: #9e4770;
+}
+

@@ -1,46 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+    <!--
+Author: Mason Hedger
+Creation Date: 2026-04-11
+Github: https://github.com/masonh627
+
+Notes about making this project per step 3.
+
+I did not use any AI in the making of this website
+N/A
+N/A
+N/A
+
+While I did not use any AI to make this website, I did consult a lot of recources
+Those will be listed now
+https://coolors.co/ for the color theme of the website
+https://www.w3schools.com/html/default.asp for help with HTML
+https://www.w3schools.com/css/default.asp for help with CSS
+
+All of the java script was coded from exsisting skills and knowledge.
+
+Telephone verification regular expression was found here:
+https://regex101.com/r/cFEhad/1
+
+I also consulted many sources to get my git working with VS Code
+    -->
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mason Hedger</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
     </head>
+
     <body>
-        <header>
-            <nav class="navbar">
-                <h1 class="logo">Mason Hedger</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <h2 class="logo">Mason Hedger</h2>
+            <ul class="navlinks">
+                <li><a id="home" href="#home">Home</a></li>
+                <li><a id="courses" href="#courses">Courses</a></li>
+                <li><a id="projects" href="#projects">projects</a></li>
+                <li><a id="contact" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <section id="home" class="section">
-            <h2>Welcome</h2>
-            <p>Hello! I'm Mason Hedger. Welcome to my personal website.</p>
+        <!--Main Body of information-->
+        <section class="home">
+            <h1>Home</h1>
+            <hr color="black">
+            <ul class="homeinfo">
+                <li id="aboutme"><h2>About Me</h2></li>
+                <li id="hobbies"><h2>Hobbies</h2></li>
+                <li id="interests"><h2>Interests</h2></li>
+            </ul>
         </section>
 
-        <section id="courses" class="section">
-            <h2>Courses</h2>
-            <p>List your courses here.</p>
+        <section id="courses">
+            <h1>Courses</h1>
+            <hr color="black">
+            <ul class="courseslist" id="courseslist">
+            </ul>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
+        <section id="projects">
+            <h1>Projects</h1>
+            <hr color="black">
+            <ul class="projectlist" id="projectlist">
+
+            </ul>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: your@email.com</p>
+        <section id="contact">
+            <h1>Contact</h1>
+            <hr color="black">
+            <div id="contactinfo">
+                
+            </div>
+            <form id="contactform">
+                <label for="firstname">First Name: </label>
+                <input type="text" id="firstname" class="textbox">
+                <br>
+                <label for="lastname">Last Name: </label>
+                <input type="text" id="lastname" class="textbox">
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="textbox">
+                <br>
+                <label for="info">Additional Info:</label>
+                <input type="text" id="info" class="textbox">
+                <br>
+                <input type="submit" id="submit" value="Submit Form">
+            </form>
         </section>
-
-        <footer>
-            <p>© 2026 Mason Hedger</p>
-        </footer>
     </body>
 </html>
