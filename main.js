@@ -4,12 +4,14 @@
 // Make information form work and do stuff ig
 
 // Get all web elements
-FORMSUBMIT = document.getElementById("submit");
-PROJECTLIST = document.getElementById("projectlist");
-COURSELIST = document.getElementById("courseslist");
-HOBBIES = document.getElementById("hobbies");
-ABOUTME = document.getElementById("aboutme");
-INTERESTS = document.getElementById("interests");
+const FORMSUBMIT = document.getElementById("submit");
+const PROJECTLIST = document.getElementById("projectlist");
+const COURSELIST = document.getElementById("courseslist");
+const HOBBIES = document.getElementById("hobbies");
+const ABOUTME = document.getElementById("aboutme");
+const INTERESTS = document.getElementById("interests");
+const ADDRESS = document.getElementById("contactinfo");
+const FORM = document.getElementById("contactform");
 
 // Define the about me data
 const ABOUT_ME_DATA = [
@@ -156,6 +158,36 @@ function fillProjects(){
         PROJECTLIST.appendChild(project);
     }
 }
+
+
+// Fills in my personal contact details
+function fillContactInfo() {
+    // information for all of my contact info
+    let email = "masonhedger.buisness@proton.me"
+    let cell = "1 (309) 830-7666"
+    let github = "https://github.com/masonh627"
+
+    ADDRESS.innerHTML = `<p>Email: ${email}<br>Cell: ${cell}<br>Github: <a href=${github} class="link">${github}</a></p>`
+}
+
+// code that is called when the contact form is submitted
+function contactSubmit() {
+
+    // Get data from contact form
+    let formdata = new FormData(FORM);
+
+    // get all the form data
+    let firstName = formdata.get("firstname");
+    let lastName = formdata.get("lastname");
+    let email = formdata.get("email");
+    let additionalInfo = formdata.get("info");
+    // alert user to confirm that this data is correct
+    if (window.confirm("Does this info look correct?\nName: " + firstName + " " + lastName + "\nEmail: " + email + "\nAdditional Info: " + additionalInfo)){
+        console.log("Client entered form data");
+        console.log(firstName, lastName, email, additionalInfo);
+    }
+}
+
 // Main function that handles DOM maniplation order
 function main() {
     listAboutMe()
@@ -163,6 +195,10 @@ function main() {
     listInterests()
     fillCourses()
     fillProjects()
+    fillContactInfo()
 }
 
 main() 
+
+// Contact form submit button listener
+document.getElementById("submit").addEventListener("click", contactSubmit)

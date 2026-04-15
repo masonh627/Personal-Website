@@ -7,6 +7,7 @@ body {
     background: #2E2532;
     color: #FBFBFB;
     line-height: 1.6;
+    margin: 0px;
 }
 
 .navbar {
@@ -14,9 +15,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background: hsl(280, 15%, 12%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
+    top: 0;
+    position: sticky;
+
+    mix-blend-mode: hard-light;
 }
 
 .navlinks {
@@ -24,11 +27,12 @@ body {
     display: flex;
     gap: 25px;
     padding-right: 20px;
+
 }
 
 .navlinks a {
     text-decoration: none;
-    color: #FBFBFB;
+    color: inherit;
     font-weight: 600;
     transition: 0.5s;
 }
@@ -43,11 +47,10 @@ body {
 
 section {
     background-color: hsl(280, 15%, 12%);
-    justify-content: space-between;
     margin-top: 10px;
-    border-radius: 10px;
     padding: 10px 10px 10px 10px;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 section h1 {
@@ -60,6 +63,7 @@ section ul {
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
+    padding-left: 0;
 }
 
 section li {
@@ -111,14 +115,24 @@ section li:hover {
     justify-content: center;
 }
 
+.homeinfo {
+    display: flex;
+    justify-content: center;
+}
+
 .homeinfo li {
-    width: 30%;
-    aspect-ratio: 0.75;
+    width: auto;
+    height: auto;
+    aspect-ratio: unset;
+    margin: 10px;
 }
 
 #hobbies {
     color: white;
     transition: 0.5s;
+    flex: 1;
+    width: 50%;
+    height: auto;
 }
 
 #hobbies:hover {
@@ -168,6 +182,9 @@ section li:hover {
 #interests {
     color: white;
     transition: 0.5s;
+    width: 50%;
+    flex: 1;
+    height: auto;
 }
 
 #interests:hover {
@@ -183,10 +200,19 @@ section li:hover {
     padding: 2px;
     font-size: 1.5em;
     color: inherit;
+    text-align: left;
 }
 
 .course ol {
     padding-left: 20px
+
+}
+
+.course {
+    width: 25%;
+    max-width: 171px;
+    overflow: auto;
+    aspect-ratio: 1;
 }
 
 .course h6 {
@@ -201,12 +227,19 @@ section li:hover {
     font-size: 1em;
     padding: 2px;
     color: inherit;
+    text-align: left;
 }
 
 .course li:hover {
     background-color: unset;
 }
 
+.project {
+    width: 25%;
+    max-width: 171px;
+    overflow: auto;
+    aspect-ratio: 1;
+}
 .projectlist a {
     text-decoration: none;
     color: #FBFBFB;
@@ -218,3 +251,18 @@ section li:hover {
     color: #9e4770;
 }
 
+hr {
+    color: black;
+    width: 90vw;
+    margin: auto;
+    opacity: 0.1;
+}
+
+.link {
+    color: #FBFBFB;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #9e4770;
+}
