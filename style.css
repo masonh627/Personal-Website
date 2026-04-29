@@ -153,6 +153,7 @@ section li:hover {
 #aboutme {
     color: white;
     transition: 0.5s;
+    width: 100%;
 }
 
 #aboutme:hover {
@@ -210,7 +211,7 @@ section li:hover {
 
 .course {
     width: 25%;
-    max-width: 171px;
+    max-width: 200px;
     overflow: auto;
     aspect-ratio: 1;
 }

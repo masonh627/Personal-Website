@@ -35,12 +35,23 @@ const HOBBY_DATA = [
 const INTERESTS_DATA = [
     "OpSec",
     "Intersection of AI and Cyber",
+    "Linux Distros",
+    "PC Setup"
 ]
 
 // All of my course data
+// I ran out of major related classes, so i ended up adding normal ones too.
 const COURSE_DATA = [
     ["CS 155", "Computer Science 1", "Error Handling","Input Sanatation", "OOP", "Java Based"], // Main title, smaller subtitle, what i learned
-    ["IS 245", "Web Development & Security", "DOM Manipulation", "JS", "CSS", "HTML"]
+    ["IS 245", "Web Development & Security", "DOM Manipulation", "JS", "CSS", "HTML"],
+    ["CS 245", "Discrete Structures", "Set & Functions", "Sequences", "Proof-Writing", "O(n) notation"],
+    ["TN 275", "Intro to Networking", "IpV4 & IpV6", "Network Config", "Server Confiugration"],
+    ["MA 223", "Elementary Statistics", "Probability Distributions", "Data Visualising"],
+    ["MA 155", "Statistical Reasoning", "Drawing Conclusion from Data", "Assertations"],
+    ["BA 252", "Business Communication", "Formal Communcation", "Proper Etiquette"],
+    ["CS 101", "Intro to Computer Science", "Python", "Project Managment", "Collaborative Programming"],
+    ["EN 101", "English Composition", "Grammar rules", "APA and MLA", "Logical arguments"],
+    ["EN 102", "Rhet & Crit Thinking", "Mediums of Communication", "Digital Communication"]
 ]
 
 // ALL of my project data, continues the same form as course data
