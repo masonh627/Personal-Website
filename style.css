@@ -33,6 +33,7 @@ body {
 .navlinks a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.5rem;
     font-weight: 600;
     transition: 0.5s;
 }

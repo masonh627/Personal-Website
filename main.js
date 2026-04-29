@@ -1,8 +1,3 @@
-// TODO:
-// Add information to contact form
-// Input info about 10 classes
-// Make information form work and do stuff ig
-
 // Get all web elements
 const FORMSUBMIT = document.getElementById("submit");
 const PROJECTLIST = document.getElementById("projectlist");
@@ -62,7 +57,6 @@ const PROJECT_DATA = [
 
 // all of my contact info
 const CONTACT_INFO = [];
-
 
 // Function that loads the about me data on the page
 function listAboutMe(){
@@ -166,6 +160,7 @@ function fillProjects(){
         description.innerHTML = PROJECT_DATA[i][2];
         project.appendChild(description);
 
+        // Add project to the project list.
         PROJECTLIST.appendChild(project);
     }
 }
@@ -177,8 +172,9 @@ function fillContactInfo() {
     let email = "masonhedger.buisness@proton.me"
     let cell = "1 (309) 830-7666"
     let github = "https://github.com/masonh627"
+    let linkedin = "https://www.linkedin.com/in/mason-hedger-b520a819a"
 
-    ADDRESS.innerHTML = `<p>Email: ${email}<br>Cell: ${cell}<br>Github: <a href=${github} class="link">${github}</a></p>`
+    ADDRESS.innerHTML = `<p>Email: ${email}<br>Cell: ${cell}<br>Github: <a href=${github} class="link">${github}</a><br>LinkedIn: <a href=${linkedin} class="link">${linkedin}</a></p>`
 }
 
 // code that is called when the contact form is submitted
